@@ -56,16 +56,16 @@ body{
     margin: auto;
     width: 500px;
 }
-.item-list{
+.itemlist{
     align-items: center;
 }
-.body-list ul{
+.itemlist{
     position: relative;
     width: 350px;
     font-size: large;
     list-style: none;
 }
-.body-list ul li{
+.itemlist li{
     position: relative;
     display: flex;
     left: 0;
@@ -73,10 +73,10 @@ body{
     align-items: center;
     padding-top: 10px;
 }
-.body-list ul LI::before{
+.itemlist LI::before{
     margin-right: 10px;
     cursor: pointer;
-    background-image: url(tick-33862.png);
+    background-color: rgb(161, 163, 166);
     height: 20px;
     width: 20px;
     content: '';
@@ -85,18 +85,18 @@ body{
     background-position: center;
 }
 
-.body-list ul LI.checked{
+.itemlist LI.checked{
     color: aqua;
     text-decoration: line-through;
 }
-.body-list ul SPAN{
+.itemlist SPAN{
     position:absolute;
     text-align: center;
     right: 0px;
     width: 30px;
     font-size: 30px;
 }
-.body-list ul span:hover{
+.itemlist span:hover{
     position:absolute;
     align-items: center;
     right: 0px;
