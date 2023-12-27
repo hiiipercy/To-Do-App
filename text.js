@@ -38,8 +38,8 @@ function showData(){
     itemlist.innerHTML= localStorage.getItem("Data");
 }
 showData();*/
-const inputBox=document.getElementById("input-task");
-const inputList=document.getElementById("itemlist");
+const inputBox = document.getElementById("input-task");
+const inputList = document.getElementById("item-list");
 
 function addItem (){
     if(inputBox.value === ""){

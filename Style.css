@@ -3,18 +3,35 @@
 }
 body{
     margin: 0;
-    background-color: rgb(180, 183, 186);
+    background: linear-gradient(180deg, #e66465, #9198e5);
 }
-.header{
-    height: 70px;
+.demo{
+    align-items: center;
     display: flex;
-    margin-bottom: 30px;
-    background-color: rgb(255, 255, 255);
+    padding: 10%;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+.container{
+    align-items: center;
+    background-color: #FFFFFF;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+.header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    top: 10%;
+}
 .left-logo{
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
 }
@@ -33,12 +50,22 @@ body{
 .add-task{
     align-items: center;
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    justify-content: space-between;
+    padding: 0 110px;
     width: 500px;
 }
+.input-task::placeholder {
+    align-items: center;
+    padding: 12px 20px;
+  }
+
+.input-task[type=text] {
+    padding: 12px 20px;
+  }
+
 .input-task{
     height: 30px;
+    width: 200px;
     border-radius: 15px;
     margin-bottom: 5px;
 }
@@ -56,27 +83,28 @@ body{
     margin: auto;
     width: 500px;
 }
-.itemlist{
+.item-list{
     align-items: center;
 }
-.itemlist{
+.item-list{
     position: relative;
     width: 350px;
     font-size: large;
     list-style: none;
 }
-.itemlist li{
+.item-list li{
     position: relative;
     display: flex;
     left: 0;
+    cursor: pointer;
     width: 300px;
     align-items: center;
     padding-top: 10px;
 }
-.itemlist LI::before{
+.item-list li::before{
     margin-right: 10px;
     cursor: pointer;
-    background-color: rgb(161, 163, 166);
+    background-color:aqua;
     height: 20px;
     width: 20px;
     content: '';
@@ -85,18 +113,18 @@ body{
     background-position: center;
 }
 
-.itemlist LI.checked{
+.item-list li.checked{
     color: aqua;
     text-decoration: line-through;
 }
-.itemlist SPAN{
+.item-list span{
     position:absolute;
     text-align: center;
     right: 0px;
     width: 30px;
     font-size: 30px;
 }
-.itemlist span:hover{
+.item-list span:hover{
     position:absolute;
     align-items: center;
     right: 0px;
